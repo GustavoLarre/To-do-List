@@ -1,0 +1,146 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-weight: 700;
+  color: #4a3c97;
+  letter-spacing: 1.2px;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 14px 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #764ba2;
+  outline: none;
+}
+
+button {
+  padding: 14px 0;
+  background-color: #764ba2;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5a3580;
+}
+
+button:active {
+  background-color: #3e255a;
+}
+
+#mensagem,
+#mensagemLogin {
+  color: #e74c3c;
+  font-weight: 600;
+  margin-top: 10px;
+  min-height: 20px;
+}
+
+ul#listaTarefas {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+ul#listaTarefas li {
+  background: #f9f9f9;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+ul#listaTarefas li button {
+  background-color: #667eea;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  margin-left: 8px;
+  transition: background-color 0.3s;
+}
+
+ul#listaTarefas li button:hover {
+  background-color: #4a63d9;
+}
+
+ul#listaTarefas li button:active {
+  background-color: #3a4ca8;
+}
+
+.status-concluida {
+  text-decoration: line-through;
+  color: #888;
+  font-style: italic;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 25px;
+  }
+
+  button, input {
+    font-size: 1rem;
+  }
+}
